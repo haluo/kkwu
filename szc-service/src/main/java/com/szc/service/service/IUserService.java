@@ -7,6 +7,6 @@ import com.szc.service.domain.User;
  */
 public interface IUserService {
 
-    public User getById(Integer id);
+    public User getById(Long id);
 
 }

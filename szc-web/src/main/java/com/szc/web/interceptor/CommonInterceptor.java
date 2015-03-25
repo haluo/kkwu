@@ -53,7 +53,7 @@ public class CommonInterceptor extends HandlerInterceptorAdapter {
         User user = null;
         String userId = getCookieValue(request.getCookies(), USER_COOKIE_KEY);
         if (StringUtils.isNotEmpty(userId))
-            user = userService.getById(Integer.valueOf(userId));
+            user = userService.getById(Long.valueOf(userId));
         if (matcher.matches()) {
             if (user == null) {
                 response.sendRedirect(request.getContextPath() + USER_CHECK_URL);

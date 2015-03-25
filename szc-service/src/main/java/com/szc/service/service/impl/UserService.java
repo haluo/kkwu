@@ -19,7 +19,7 @@ public class UserService implements IUserService {
 
 
     @Override
-    public User getById(final Integer id) {
+    public User getById(final Long id) {
         return userDao.get(new HashMap<String, Object>(){
             {
                 put("id", id);

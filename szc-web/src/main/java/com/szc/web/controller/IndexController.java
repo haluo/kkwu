@@ -21,7 +21,7 @@ public class IndexController extends BaseController{
     @RequestMapping(value = "/")
     public ModelAndView getUser(){
         ModelAndView mv = new ModelAndView("/index");
-        User user = userService.getById(1);
+        User user = userService.getById(1L);
         mv.addObject("user", user);
         return  mv;
     }
