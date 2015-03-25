@@ -1,0 +1,16 @@
+CREATE TABLE `user`(
+id bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+uname  varchar(30) DEFAULT NULL COMMENT '用户名',
+passwd varchar(50) DEFAULT NULL COMMENT '密码',
+ename  varchar(30) DEFAULT NULL COMMENT '网名',
+email varchar(50) DEFAULT NULL COMMENT '邮箱',
+phone  varchar(30) DEFAULT NULL COMMENT '手机',
+provinceid  int(11) DEFAULT NULL COMMENT '省id',
+cityid  int(11) DEFAULT NULL COMMENT '市id',
+created datetime NOT NULL,
+modified datetime NOT NULL,
+PRIMARY KEY (id)
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户表';
+ALTER TABLE `user` ADD UNIQUE KEY  INDEX_USER_UNAME(uname);
+
+

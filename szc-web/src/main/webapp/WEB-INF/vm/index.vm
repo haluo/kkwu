@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='zh-CN' ng-app="app">
+<head>
+    <title>可口屋_发现特色美食</title>
+    <meta content="特色美食，可口屋，各地美食，美食推荐" name="keywords">
+    <meta content="可口屋是中国第一家特色美食推荐网站,也是最具影响力的特色美食论坛,作为优秀美食网站,可口屋为用户提供各地特色美食推荐,美食点评,活动发起,网上订餐等服务" name="description">
+    <link href="/js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/bower_components/angular/angular.js"></script>
+    <script src="/js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/ng/app.js"></script>
+</head>
+<body>
+<input ng-model="name" type="text" placeholder="Your name">
+<h1>Hello {{ name }}</h1>
+hi,$user.phone
+</body>
+</html>
